@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
 
     <title> Contact Stipica </title>
 </head>
@@ -38,8 +40,9 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div>
+    <section class="contact">
+        <h1>Contact me</h1>
+        <div class="contact__details">
             Stipica Viskovic <br>
             Schellstr. 25 <br>
             45141 Essen <br><br>
@@ -53,14 +56,14 @@
 
 
         <br><br><br>
-        <form action="" method="post" id="contact-form">
-            <label class="standard-label" for="email">Email: </label>
-            <input type="email" id="email" required>
-            <label class="standard-label" for="textarea">Message: </label>
-            <textarea id="textarea" required maxlength="240"></textarea>
+        <form class="contact__form" action="" method="post" id="contact-form">
+            <label class="standard-label" for="email">Email: </label> <br>
+            <input type="email" id="email" required> <br><br>
+            <label class="standard-label" for="textarea">Message: </label> <br>
+            <textarea id="textarea" required maxlength="240" rows="5" cols="40" ></textarea> <br> <br>
             <input class="button__main" type="submit" value="Send message">
         </form>
-    </main>
+    </section>
 
     <footer class="page-footer">
         <p>Find me on:</p>

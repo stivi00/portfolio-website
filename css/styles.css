@@ -151,6 +151,18 @@ h1{
     margin-right: 40px;
 }
 
+.contact {
+    text-align: center;
+}
+
+.contact__details{
+    /* so far nothing to style */
+}
+
+.contact__form  input{
+    padding: 10px;
+}
+
 h1{
     font-size: 30px;
     font-weight: 700;
@@ -169,17 +181,13 @@ h1{
     border:none;
     border-radius: 3px;
     padding: 5px;
-    /* transition-property: opacity;
-    transition-duration: 0.3s; */
     transition: opacity 0.3s;
 }
 
 .button__main:hover,
 .button__main:active{
-    /* background-color: #009bfc; */
     opacity: 0.8;
     cursor: pointer;
-
 }
 
 a:visited{
