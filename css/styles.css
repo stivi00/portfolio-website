@@ -7,7 +7,8 @@
     --secondary-color: #25ff51;
     --span-bg-color: #1b1a1a;
     --span-color: #ffdd1f;
-    --backgrond-color: #dedddb;
+    --backgrond-color: #202020;
+    --navbar--header-text: #ffffda;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
     margin: auto;
 }
 
+/* --NAVBAR START-- */
 .page-header{
     display: flex;
     width: 100%;
@@ -29,6 +31,10 @@ body {
 
 .page-header__item {
     /* flex: 0 2 200px; */
+}
+
+.page-header__logo {
+    color: var(--navbar--header-text);
 }
 
 .page-header__item:last-child {
@@ -41,22 +47,33 @@ body {
     list-style-type: none;
 }
 
-.navigation-list li {
+.navigation-list li{
     display: inline-block;
     margin-left: 15px;
+    color: var(--navbar--header-text);
+    /* color: red; */
+
 }
 
-h1{
+.navigation-list li a {
+    color: var(--navbar--header-text);
+}
+
+.section-title{
     text-align: center;
+    color: var(--navbar--header-text);
+
 }
 
 .about__section{
     text-align: center;
 }
+/* --NAVBAR END-- */
 
 
 /* start grid fallback */
 .project-list__item {
+    border-color: 1px solid red;
     display: inline-block;
     width: 33%;
 }
