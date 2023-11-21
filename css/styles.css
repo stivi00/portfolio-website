@@ -94,6 +94,7 @@ body {
         background-color: #555555;
         /* padding: 10px; */
         width: 100%;
+        position: relative;
     }
 
     .project-list__item__header h3{
@@ -106,8 +107,6 @@ body {
         padding: 5px;
         text-align: center;
     }
-
-
 }
 
 @media all and (max-width: 500px) {
@@ -134,9 +133,18 @@ body {
 }
 
 .project-image{
-    width: 100%;
+    width: 97%;
     display: block;
+    margin: auto;
     /* height: 80%;  */
+}
+
+.github-link{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 /* --WORK GRID LIST END-- */
@@ -209,7 +217,9 @@ a:active{
     clear: both;
     display: flex;
     flex-direction: column;
+    width: 100%;
     text-align: center;
+    color: #fff;
 }
 
 .fa {
