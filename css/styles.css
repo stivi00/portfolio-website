@@ -66,7 +66,6 @@ body {
 
 /* start grid fallback */
 .project-list__item {
-    border-color: 1px solid red;
     display: inline-block;
     width: 33%;
 }
@@ -79,21 +78,36 @@ body {
 
 }
 
-
+/* --WORK GRID LIST START-- */
 @supports (display: grid) {
     .project-list {
         display: grid;
         width: 80%;
         grid-template-columns: 33% 33% 33%;
-        grid-gap: 10px;
+        grid-gap: 12px;
         margin: 0 auto;
+        color: #ffffff;
+
     }
     
     .project-list__item{
-        background-color: lightgray;
-        padding: 10px;
+        background-color: #555555;
+        /* padding: 10px; */
         width: 100%;
     }
+
+    .project-list__item__header h3{
+        /* padding: 0; */
+        margin: 5px;
+        text-align: center;
+    }
+
+    .project-list__item__content{
+        padding: 5px;
+        text-align: center;
+    }
+
+
 }
 
 @media all and (max-width: 500px) {
@@ -118,6 +132,14 @@ body {
     font-size: 22px;
   }
 }
+
+.project-image{
+    width: 100%;
+    display: block;
+    /* height: 80%;  */
+}
+
+/* --WORK GRID LIST END-- */
 
 
 
