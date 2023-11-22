@@ -60,6 +60,7 @@ body {
 
 .about__section{
     text-align: center;
+    color: #ffffff;
 }
 /* --NAVBAR END-- */
 
@@ -145,6 +146,7 @@ body {
     left: 0;
     width: 100%;
     text-align: center;
+    color: #fff;
 }
 
 /* --WORK GRID LIST END-- */
@@ -154,6 +156,7 @@ body {
 .profile{
     max-width: 700px;
     margin: 0 auto;
+    color: #ffffff;
 }
 
 .profilepic{
@@ -168,9 +171,17 @@ body {
     text-align: center;
 }
 
+.contact__details{
+    color: #ffffff;
+}
+.standard-label{
+    color: #ffffff;
+}
+
 
 .contact__form  input{
     padding: 10px;
+    color: #ffffff;
 }
 
 h1{
@@ -200,6 +211,11 @@ h1{
     cursor: pointer;
 }
 
+
+/* LINK STYLING START */
+
+
+ 
 a:visited{
     color: var(--primary-color);
 }
@@ -226,52 +242,9 @@ a:active{
     padding: 20px;
     font-size: 30px;
     width: 50px;
-    text-align: center;
     text-decoration: none;
-  }
+}
 
-  .fa:hover {
+.fa:hover {
     opacity: 0.7;
-  }
-
-
-  /* animation of svg element starts here  */
-.sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
 }
-
-.cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-}
-
-
-@keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-    50% {
-      fill: #fcffad;
-    }
-    100% {
-      fill: #f76714;
-    }
-}
-
-@keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-    to {
-      transform: translate(100px, 48px);
-    }
-}
-
-.cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-/* animation of svg element ends here  */
